@@ -1,0 +1,82 @@
+function dopnbwc() {
+    document.body.insertAdjacentHTML('beforeend', `
+    <aside class="desktop_phone_number_box_wrapper">
+        <span class="desktop_phone_number_box_close" onclick="this.parentNode.style.display = 'none';">X</span>
+        <div class="desktop_phone_number_box_inner">
+            <h2 class="desktop_phone_number_box_heading">Call now</h2>
+            <a class="desktop_phone_number_box_link" href="tel:NUMBER">NUMBER</a>
+        </div>
+    </aside>
+    `)
+    
+    newStyle = document.createElement("style");
+    newStyle.type = "text/css";
+    newStyle.innerHTML +=`
+        .desktop_phone_number_box_close {
+            display: block;
+            position: absolute;
+            text-align: left;
+            color: #fff;
+            font-size: 16px;
+            top: 6px;
+            left: 12px;
+        }
+        .desktop_phone_number_box_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: fixed;
+            width: 300px;
+            bottom: 15%;
+            left: 5%;
+            z-index: 9999;
+            font-weight: bold;
+            background: green;
+        }
+        .desktop_phone_number_box_heading {
+            padding: 25px 25px 0 25px;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            display: block;
+            color: #fff;
+        }
+        .desktop_phone_number_box_link {
+            padding: 0 25px 25px 25px;
+            font-size: 30px;
+            display: block;
+            color: #fff;
+        }
+        .desktop_phone_number_box__link:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .desktop_phone_number_box__link:active {
+            color: red !important; /* fix a collide with MediaWiki */
+        }
+        .desktop_phone_number_box__link:focus {
+            color: #fff;
+        }
+    `;
+    document.head.appendChild(newStyle);
+}
+
+if (window.innerWidth >= 850) {
+    dopnbwc();
+}
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth < 850) {
+        document.querySelector(".desktop_phone_number_box_wrapper").remove();
+    }
+});
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth >= 850) {
+        const [...dopnbwcBox] = document.querySelectorAll(".desktop_phone_number_box_wrapper");
+        dopnbwcBox.forEach( (element)=>{
+            element.remove();
+        });
+        dopnbwc();
+    };
+});

@@ -1,0 +1,8 @@
+const classNames = document.querySelector("body").classList;
+if (
+    classNames.contains("c1") ||
+    classNames.contains("c2") ||
+    classNames.contains("c3")
+) {
+    document.querySelector("#catlinks-sidebar").remove();
+}
