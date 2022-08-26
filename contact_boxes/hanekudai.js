@@ -2,7 +2,7 @@ let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 if (viewportWidth < 480) {
     document.body.insertAdjacentHTML('beforeend', `
     <aside class="all_textual_cnb_wrapper">
-    	<a class="all_textual_cnb_link" href="tel:0584750900">להתקשר אלי ✆</a>
+    	<a class="all_textual_cnb_link" href="tel:NUMBER">להתקשר אלי ✆</a>
     </aside>
     `)
     
