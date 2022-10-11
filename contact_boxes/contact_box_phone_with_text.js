@@ -22,7 +22,7 @@ newStyle.innerHTML +=`
         text-decoration: none;
         font-size: 120%;
         font-weight: bold;
-	background: #149714;
+	background: linear-gradient(-160deg,#2494db 0%,#0d7ab8 78.66%);
     }
     .cbwtphone_link {
     	display: inline;
