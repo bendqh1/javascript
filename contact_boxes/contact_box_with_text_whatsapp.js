@@ -1,6 +1,6 @@
 document.body.insertAdjacentHTML('beforeend', `
 	<aside class="cbwtphone_wrapper">
-		<a class="cbwtphone_link" href="https://wa.me:972584750900">
+		<a class="cbwtphone_link" href="https://wa.me:NUMBER">
 			<span class="cbwtphone_text">שיחת וואטסאפ</span>
 			<img class="cbwtphone_icon" src="https://en.wikipedia.org/wiki/WhatsApp#/media/File:WhatsApp.svg"></img>
 		</a>
