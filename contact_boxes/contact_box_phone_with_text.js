@@ -25,17 +25,18 @@ newStyle.innerHTML +=`
 	background: #149714;
     }
     .cbwtphone_link {
+    	display: inline;
     	text-decoration: none; /* Fixes continuing line problem */
     }
     .cbwtphone_icon {
-    	display: inline
+    	display: inline;
         width: 50px;
         height: 50px;
 	vertical-align: middle;
 	filter: invert(1);
     }
     .cbwtphone_text {
-    	display: inline
+    	display: inline;
     	vertical-align: middle;
 	color: #fff;
     }
