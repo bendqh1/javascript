@@ -1,7 +1,7 @@
 document.body.insertAdjacentHTML('beforeend', `
 	<aside class="jcb_button">
 		<a class="jcb_phone_link" href="https://wa.me/NUMBER">
-			<img class="jcb_phone_icon" src="https://en.wikipedia.org/wiki/WhatsApp#/media/File:WhatsApp.svg"></img>
+			<img class="jcb_phone_icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"></img>
 		</a>
 	</aside>
 `)
