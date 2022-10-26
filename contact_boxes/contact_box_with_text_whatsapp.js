@@ -2,7 +2,7 @@ document.body.insertAdjacentHTML('beforeend', `
 	<aside class="cbwtphone_wrapper">
 		<a class="cbwtphone_link" href="https://wa.me:NUMBER">
 			<span class="cbwtphone_text">שיחת וואטסאפ</span>
-			<img class="cbwtphone_icon" src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg"></img>
+			<img class="cbwtphone_icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png"></img>
 		</a>
 	</aside>
 `)
