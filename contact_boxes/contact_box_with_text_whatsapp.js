@@ -30,10 +30,10 @@ newStyle.innerHTML +=`
     	text-decoration: none; /* Fixes continuing line problem */
     }
     .cbwtphone_icon {
-   	display: inline;
+   	display: inline; /* Fix for Drupal */
         width: 50px;
         height: 50px;
-	vertical-align: middle; /* Fix for Drupal */
+	vertical-align: middle;
     }
     .cbwtphone_text {
     	display: inline; /* Fix for Drupal */
