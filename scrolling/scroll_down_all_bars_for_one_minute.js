@@ -9,3 +9,5 @@ const myInterval = setInterval(function(){
     element.scrollTo(0, element.scrollHeight)
 });
 }, 2000);
+
+// For all THESE elements, set ALL_ELEMENTS, then FOREACH element do;
