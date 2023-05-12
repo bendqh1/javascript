@@ -1,14 +1,14 @@
 // Credit to Paul Wilkins from sitepoint.com
 
-function walkElems(node) {
+function walkOnElements(node) {
   const els = node.childNodes;
-  els.forEach(function (el) {
-    if (el.childNodes) {
-      walkElems(el);
+  els.forEach(function (element) {
+    if (element.childNodes) {
+      walkOnElements(element);
     }
     if (el.nodeType === Node.TEXT_NODE && el.nodeValue.includes("xyzxyzxyz")) {
       el.nodeValue = el.nodeValue.replace(/xyzxyzxyz/g, "abcabcabc");
     }
   });
 }
-walkElems(document.body);
+walkOnElements(document.body);
