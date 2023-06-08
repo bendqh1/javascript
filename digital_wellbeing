@@ -1,16 +1,29 @@
+// ==UserScript==
+// @name        digital_wellbeing
+// @run-at      document-start
+// @match       *
+
+// ==/UserScript==
+
 //
 // Block news websites as much as possible
 //
 
 if (
-  document.querySelector('title')?.textContent.includes("News") ||
-  document.querySelector('meta[name="title"]')?.content.includes("News") ||
-  document.querySelector('meta[name="description"]')?.content.includes("News") ||
-  document.querySelector('meta[name="tags"]')?.content.includes("News") ||
-  document.querySelector('meta[name="title"]')?.content.includes('חדשות', 'החדשות') ||
-  document.querySelector('meta[name="description"]')?.content.includes('חדשות', 'החדשות') ||
-  document.querySelector('meta[name="tags"]')?.content.includes('חדשות', 'החדשות') ||
-  window.location.href.includes('n12.co.il')
+  document.querySelector('title')?.textContent.includes('News') ||
+  document.querySelector('title')?.textContent.includes('news') ||
+  document.querySelector('meta[name="title"]')?.content.includes('News') ||
+  document.querySelector('meta[name="title"]')?.content.includes('news') ||
+  document.querySelector('meta[name="description"]')?.content.includes('News') ||
+  document.querySelector('meta[name="description"]')?.content.includes('news') ||
+  document.querySelector('meta[name="tags"]')?.content.includes('News') ||
+  document.querySelector('meta[name="tags"]')?.content.includes('news') ||
+  document.querySelector('meta[name="title"]')?.content.includes('חדשות') ||
+      document.querySelector('meta[name="title"]')?.content.includes('החדשות') ||
+  document.querySelector('meta[name="description"]')?.content.includes('חדשות') ||
+      document.querySelector('meta[name="description"]')?.content.includes('החדשות') ||
+  document.querySelector('meta[name="tags"]')?.content.includes('חדשות') ||
+      document.querySelector('meta[name="tags"]')?.content.includes('החדשות')
 ) {
   window.open("https://google.com/", "_self");
 }
