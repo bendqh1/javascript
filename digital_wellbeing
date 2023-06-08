@@ -1,0 +1,28 @@
+// Block news websites as much as possible
+
+if (
+  document.querySelector('title')?.textContent.includes("News") ||
+  document.querySelector('meta[name="title"]')?.content.includes("News") ||
+  document.querySelector('meta[name="description"]')?.content.includes("News") ||
+  document.querySelector('meta[name="tags"]')?.content.includes("News") ||
+  document.querySelector('meta[name="title"]')?.content.includes('חדשות', 'החדשות') ||
+  document.querySelector('meta[name="description"]')?.content.includes('חדשות', 'החדשות') ||
+  document.querySelector('meta[name="tags"]')?.content.includes('חדשות', 'החדשות') ||
+  window.location.href.includes('n12.co.il')
+) {
+  window.open("https://google.com/", "_self");
+}
+
+// Block video autoplaying
+
+window.addEventListener('load', () => {
+  document.querySelectorAll('video').forEach(anyVideo => {
+    anyVideo.pause();
+  });
+});
+
+window.setTimeout( () => {
+  document.querySelectorAll('video').forEach(anyVideo => {
+      anyVideo.pause();
+  });
+}, 2500);
