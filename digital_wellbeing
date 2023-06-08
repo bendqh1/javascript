@@ -1,4 +1,6 @@
+//
 // Block news websites as much as possible
+//
 
 if (
   document.querySelector('title')?.textContent.includes("News") ||
@@ -13,7 +15,9 @@ if (
   window.open("https://google.com/", "_self");
 }
 
+//
 // Block video autoplaying
+//
 
 window.addEventListener('load', () => {
   document.querySelectorAll('video').forEach(anyVideo => {
@@ -26,3 +30,19 @@ window.setTimeout( () => {
       anyVideo.pause();
   });
 }, 2500);
+
+//
+// Block specific website/s
+//
+
+let href = window.location.href;
+let anythingToBlock = [
+    'example_1.com',
+    'example_2.com'
+];
+
+for (let i = 0; i < anythingToBlock.length; i++) {
+    if (href.includes(anythingToBlock[i])) {
+            window.open("https://google.com/", "_self");
+    }
+}
