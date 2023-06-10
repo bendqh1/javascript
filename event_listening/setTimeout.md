@@ -11,7 +11,7 @@ Examples:
 ```javascript
 window.setTimeout( () => {
   window.location.href = 'https://walla.com';
-}, 2500;
+}, 2500);
 ```
 
 ```javascript
