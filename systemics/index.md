@@ -5,4 +5,4 @@ Browser components that we can work on with JavaScript:
 * Document (and its javascript)
 * DOM tree (and its CSS)
 * HTML elements
-* Pseudo HTMLL elements (**possibly**)
+* Pseudo HTML elements (**possibly**)
