@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name        digital_wellbeing
 // @run-at      document-start
-// @match       *
-
+// @match       *://*/*
 // ==/UserScript==
 
 //
@@ -19,11 +18,11 @@ if (
   document.querySelector('meta[name="tags"]')?.content.includes('News') ||
   document.querySelector('meta[name="tags"]')?.content.includes('news') ||
   document.querySelector('meta[name="title"]')?.content.includes('חדשות') ||
-      document.querySelector('meta[name="title"]')?.content.includes('החדשות') ||
+  document.querySelector('meta[name="title"]')?.content.includes('החדשות') ||
   document.querySelector('meta[name="description"]')?.content.includes('חדשות') ||
-      document.querySelector('meta[name="description"]')?.content.includes('החדשות') ||
+  document.querySelector('meta[name="description"]')?.content.includes('החדשות') ||
   document.querySelector('meta[name="tags"]')?.content.includes('חדשות') ||
-      document.querySelector('meta[name="tags"]')?.content.includes('החדשות')
+  document.querySelector('meta[name="tags"]')?.content.includes('החדשות')
 ) {
   window.open("https://google.com/", "_self");
 }
@@ -48,14 +47,14 @@ window.setTimeout( () => {
 // Block specific website/s
 //
 
-let href = window.location.href;
-let anythingToBlock = [
-    'example_1.com',
-    'example_2.com'
-];
+window.setInterval( () => {
+    const urlPatternToBlock = [
+        'URL'
+    ];
 
-for (let i = 0; i < anythingToBlock.length; i++) {
-    if (href.includes(anythingToBlock[i])) {
-            window.open("https://google.com/", "_self");
+    for (const element of urlPatternToBlock) {
+        if (window.location.href.includes(urlPatternToBlock)) {
+        window.open("https://google.com/", "_self");
+        }
     }
-}
+}, 1000);
