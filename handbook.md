@@ -13,6 +13,7 @@
 alert();
 console.log();
 document.write();
+document.cookie // output all cookies;
 ```
 
 Fourth and Fifth ways, printign from a printer.
