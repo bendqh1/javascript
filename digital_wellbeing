@@ -9,14 +9,14 @@
 //
 
 if (
-  document.querySelector('title')?.textContent.includes('News') ||
-  document.querySelector('title')?.textContent.includes('news') ||
   document.querySelector('meta[name="title"]')?.content.includes('News') ||
   document.querySelector('meta[name="title"]')?.content.includes('news') ||
   document.querySelector('meta[name="description"]')?.content.includes('News') ||
   document.querySelector('meta[name="description"]')?.content.includes('news') ||
   document.querySelector('meta[name="tags"]')?.content.includes('News') ||
   document.querySelector('meta[name="tags"]')?.content.includes('news') ||
+  document.querySelector('title')?.textContent.includes('חדשות') ||
+  document.querySelector('title')?.textContent.includes('החדשות') ||
   document.querySelector('meta[name="title"]')?.content.includes('חדשות') ||
   document.querySelector('meta[name="title"]')?.content.includes('החדשות') ||
   document.querySelector('meta[name="description"]')?.content.includes('חדשות') ||
@@ -27,21 +27,22 @@ if (
   window.open("https://google.com/", "_self");
 }
 
+/*
+  window?.location.href.includes('news') ||
+  window?.location.href.includes('News') ||
+  window?.location.href.includes('חדשות') ||
+  window?.location.href.includes('החדשות') ||
+*/
+
 //
-// Block video autoplaying
+// Block videos autoplay
 //
 
-window.addEventListener('load', () => {
+window.setInterval( () => {
   document.querySelectorAll('video').forEach(anyVideo => {
     anyVideo.pause();
   });
-});
-
-window.setTimeout( () => {
-  document.querySelectorAll('video').forEach(anyVideo => {
-      anyVideo.pause();
-  });
-}, 2500);
+}, 1);
 
 //
 // Block specific website/s
@@ -49,7 +50,7 @@ window.setTimeout( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'URL'
+        'URL_COMES_HERE'
     ];
 
     for (const element of urlPatternToBlock) {
@@ -57,4 +58,4 @@ window.setInterval( () => {
         window.open("https://google.com/", "_self");
         }
     }
-}, 1000);
+}, 1);
