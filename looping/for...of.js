@@ -14,4 +14,4 @@ window.setInterval( () => {
         window.open("https://google.com/", "_self");
         }
     }
-}, 1000);
+}, 1);
