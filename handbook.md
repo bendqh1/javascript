@@ -9,7 +9,7 @@
 
 ## Main ways to get output via JavaScript
 
-```javascript
+```js
 alert();
 console.log();
 document.write();
@@ -18,9 +18,15 @@ document.cookie // output all cookies;
 
 Fourth and Fifth ways, printign from a printer.
 
-```javascript
+```js
 window.print();
 
 const x = document.write(document.cookie);
 window.print(x);
+```
+
+## Replace an HTML structure in another (very dangerous and should generally be avoided)
+
+```js
+document.querySelector('.view-header').innerHTML = "<H1>NEW_textContent_COMES_HERE</H1>";
 ```
