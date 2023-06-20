@@ -7,6 +7,12 @@
 * HTML elements
 * Pseudo HTML elements (**possibly**)
 
+## DOM nodes
+
+* An HTML element
+* An HTML attribute and possibly a value for that attribute
+* An HTML comment
+
 ## Main ways to get output via JavaScript
 
 ```js
