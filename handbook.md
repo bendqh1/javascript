@@ -13,6 +13,8 @@
 * An HTML attribute and possibly a value for that attribute
 * An HTML comment
 
+`textContent` is not a node but special property.
+
 ## Main ways to get output via JavaScript
 
 ```js
