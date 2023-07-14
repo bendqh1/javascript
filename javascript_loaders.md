@@ -24,7 +24,7 @@ myFetch.then(function(response) {
 
 [Credit for User:Ogglas from Stack Exchange](https://stackoverflow.com/questions/7650587/using-javascript-to-display-a-blob/44069294#44069294)
 
-## async and await
+## async, fetch and await
 
 ```js
 async function fetchAndAppend() {
