@@ -50,7 +50,7 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'https://search.google.com/search-console?'
+        'https://search.google.com/search-console'
     ];
 
     for (const element of urlPatternToBlock) {
