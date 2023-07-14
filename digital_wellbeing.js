@@ -42,6 +42,12 @@ window.setInterval( () => {
 // Block specific website/s
 ////////////////////////////////////////////////////////////////////////////
 
-if ( window.location.href.includes('https://search.google.com/search-console/about') ) {
-    window.open('https://google.com/', '_self');
+if (document.querySelector('link').href.includes('https://search.google.com/search-console/about') ) {
+  window.open('https://google.com/', '_self');
 }
+
+/*
+  if ( window.location.href.includes('https://search.google.com/search-console/about') ) {
+      window.open('https://google.com/', '_self');
+  }
+*/
