@@ -44,7 +44,7 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'https://example.com'
+        'https://search.google.com/search-console/'
     ];
 
     for (const element of urlPatternToBlock) {
