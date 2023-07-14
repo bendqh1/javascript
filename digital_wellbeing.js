@@ -1,4 +1,4 @@
-// ==UserScript==
+e// ==UserScript==
 // @name        digital_wellbeing
 // @run-at      document-start
 // @match       *://*/*
@@ -50,8 +50,8 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'https://search.google.com/search-console?'
-        // 'URLs_COME_HERE'
+        'https:example.com',
+        'https://search.google.com/search-console?';
     ];
 
     for (const element of urlPatternToBlock) {
