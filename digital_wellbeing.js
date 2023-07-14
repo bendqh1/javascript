@@ -54,4 +54,4 @@ window.setInterval( () => {
     }
 }, 1);
 
-// If a website from those in the array isn't blocked, add it to the user script manager with a @match command;
+// If a website from those in the array isn't blocked, it's probably because of a redirect, so, add it to the user script manager with a @match command;
