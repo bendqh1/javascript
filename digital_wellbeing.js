@@ -42,6 +42,6 @@ window.setInterval( () => {
 // Block specific website/s
 ////////////////////////////////////////////////////////////////////////////
 
-if ( window.location.href.includes('https://search.google.com/search-console') ) {
+if ( window.location.href.includes('google.com/search-console') ) {
     window.open('https://google.com/', '_self');
 }
