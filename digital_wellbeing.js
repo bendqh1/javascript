@@ -1,4 +1,4 @@
-e// ==UserScript==
+// ==UserScript==
 // @name        digital_wellbeing
 // @run-at      document-start
 // @match       *://*/*
@@ -50,13 +50,12 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'https://example.com',
-        'https://search.google.com/search-console?';
+        'https://search.google.com/search-console?'
     ];
 
     for (const element of urlPatternToBlock) {
         if (window.location.href.includes(urlPatternToBlock)) {
-        window.open("https://google.com/", "_self");
+            window.open("https://google.com/", "_self");
         }
     }
 }, 1);
