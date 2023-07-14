@@ -42,12 +42,14 @@ window.setInterval( () => {
 // Block specific website/s
 ////////////////////////////////////////////////////////////////////////////
 
-window.setInterval(()=>{
-if (document.querySelector('link').href.includes('https://search.google.com/search-console/about') ) {
-  window.open('https://google.com/', '_self');
-}
+window.setInterval( () => {
+    const urlPatternToBlock = [
+        'https://example.com'
+    ];
 
-if ( window.location.href.includes('https://search.google.com/search-console/about') ) {
-      window.open('https://google.com/', '_self');
-}
+    for (const element of urlPatternToBlock) {
+        if (window.location.href.includes(urlPatternToBlock)) {
+            window.open("https://google.com/", "_self");
+        }
+    }
 }, 1);
