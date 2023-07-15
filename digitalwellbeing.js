@@ -1,3 +1,11 @@
+if ( document.querySelector('video') ) {
+    window.setInterval(()=>{
+        document.querySelectorAll('video').forEach(video=>{
+            video.pause();
+        });
+    }, 1);
+}
+
 if (
   document.querySelector('title')?.textContent.includes('News') ||
   document.querySelector('title')?.textContent.includes('news') ||
