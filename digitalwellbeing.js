@@ -2,6 +2,7 @@ if ( document.querySelector('video') ) {
     window.setInterval(()=>{
         document.querySelectorAll('video').forEach(video=>{
             video.pause();
+            video.remove();
         });
     }, 1);
 }
