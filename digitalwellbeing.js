@@ -1,11 +1,10 @@
-if ( document.querySelector('video') ) {
-    window.setInterval(()=>{
+window.setInterval(()=>{
+    if ( document.querySelector('video') ) {
         document.querySelectorAll('video').forEach(video=>{
             video.pause();
             video.remove();
         });
-    }, 1);
-}
+}, 1);
 
 /*-------------------------------------------------------------------------*/
 
