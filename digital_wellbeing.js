@@ -43,6 +43,18 @@ window.setInterval( () => {
 // Block specific website/s
 ////////////////////////////////////////////////////////////////////////////
 
+window.setInterval( () => {
+    const urlPatternToBlock = [
+        'https://edition.cnn.com/'
+    ];
+
+    for (const element of urlPatternToBlock) {
+        if (window.location.href.includes(urlPatternToBlock)) {
+            window.open("https://google.com/", "_self");
+        }
+    }
+}, 1);
+
 // Add in the script call itself this structure:
 
 // @match *://DOMAIN_TLD_1/*/*
