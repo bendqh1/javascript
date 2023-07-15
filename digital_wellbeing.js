@@ -45,7 +45,7 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'cnn.com'
+        // @match       *://*cnn.com/*
     ];
 
     for (const element of urlPatternToBlock) {
