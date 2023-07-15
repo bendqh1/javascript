@@ -3,5 +3,7 @@ window.setInterval( () => {
     document.querySelectorAll('video').forEach(video => {
       video.pause();
     });
-  };
+  } else {
+    return false;
+  }
 }, 1);
