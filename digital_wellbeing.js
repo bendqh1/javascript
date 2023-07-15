@@ -45,9 +45,8 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        // @match       *://*cnn.com/*
+        'exmaple.com'
     ];
-if ( window.location.href.includes('cnn.com') ) { window.open("https://google.com/", "_self"); }
 
     for (const element of urlPatternToBlock) {
         if (window.location.href.includes(urlPatternToBlock)) {
