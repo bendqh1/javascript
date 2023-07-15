@@ -17,10 +17,3 @@ if (
 ) {
   window.open("https://google.com/", "_self");
 }
-
-/*
-  window?.location.href.includes('news') ||
-  window?.location.href.includes('News') ||
-  window?.location.href.includes('חדשות') ||
-  window?.location.href.includes('החדשות') ||
-*/
