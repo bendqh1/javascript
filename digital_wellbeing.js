@@ -54,7 +54,7 @@ window.setInterval( () => {
         }
     }
 }, 1);
-
+if ( window.location.href.includes('cnn.com') ) { window.open("https://google.com/", "_self"); }
 /*
 If a website from those in the array isn't blocked,
   it's probably because of a redirect,
