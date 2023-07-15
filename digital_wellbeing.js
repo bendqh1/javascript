@@ -43,22 +43,7 @@ window.setInterval( () => {
 // Block specific website/s
 ////////////////////////////////////////////////////////////////////////////
 
-window.setInterval( () => {
-    const urlPatternToBlock = [
-        'exmaple.com'
-    ];
+// Add in the script call itself this structure:
 
-    for (const element of urlPatternToBlock) {
-        if (window.location.href.includes(urlPatternToBlock)) {
-            window.open("https://google.com/", "_self");
-        }
-    }
-}, 1);
-
-/*
-If a website from those in the array isn't blocked,
-  it's probably because of a redirect,
-    so,
-      add it to the user script manager with a @match command and block locally:
-        if ( window.location.href.includes('https://search.google.com/search-console/about') ) { window.open("https://google.com/", "_self"); }
-*/
+// @match *://DOMAIN_TLD_1/*/*
+if ( window.location.href.includes('https://DOMAIN_TLD_1/search-console/about') ) { window.open("https://google.com/", "_self"); }
