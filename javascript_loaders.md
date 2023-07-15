@@ -28,8 +28,8 @@ myFetch.then(function(response) {
 
 ```js
 async function fetchAndAppend() {
-  const res = await fetch('https://raw.githubusercontent.com/.../FILE.js');
-  const blob = await res.blob();
+  const resource = await fetch('https://raw.githubusercontent.com/.../FILE.js');
+  const blob = await resource.blob();
   
   const objectURL = URL.createObjectURL(blob);
   const scriptFile = document.createElement('script');
