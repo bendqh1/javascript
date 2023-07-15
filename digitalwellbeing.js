@@ -1,3 +1,9 @@
+// ==UserScript==
+// @name        digital_wellbeing
+// @run-at      document-start
+// @match       *://*/*
+// ==/UserScript==
+
 window.setInterval(()=>{
     if ( document.querySelector('video') ) {
         document.querySelectorAll('video').forEach(video=>{
@@ -15,12 +21,15 @@ window.setInterval( () => {
         'search-console'
     ];
 
-    for (const element of urlPatternToBlock) {
-        if (window.location.href.includes(urlPatternToBlock)) {
+    for (let element of urlPatternToBlock) {
+        if ( window.location.href.includes(urlPatternToBlock) ) {
             window.open("https://google.com/", "_self");
         }
     }
 }, 2);
+
+// Timely !!! //
+if ( window.location.href.includes('search-console') ) { window.open("https://google.com/", "_self"); }
 
 /*-------------------------------------------------------------------------*/
 
