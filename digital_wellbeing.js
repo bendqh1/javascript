@@ -45,6 +45,9 @@ window.setInterval( () => {
 
 window.setInterval( () => {
     const urlPatternToBlock = [
+        'https://.cnn.com'
+        'https://.cnn.com/'
+        'https://edition.cnn.com'
         'https://edition.cnn.com/'
     ];
 
