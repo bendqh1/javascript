@@ -6,6 +6,19 @@ if ( document.querySelector('video') ) {
     }, 1);
 }
 
+window.setInterval( () => {
+    const urlPatternToBlock = [
+        'cnn.com' ||
+        'search.google.com/search-console'
+    ];
+
+    for (const element of urlPatternToBlock) {
+        if (window.location.href.includes(urlPatternToBlock)) {
+            window.open("https://google.com/", "_self");
+        }
+    }
+}, 1);
+
 if (
   document.querySelector('title')?.textContent.includes('News') ||
   document.querySelector('title')?.textContent.includes('news') ||
