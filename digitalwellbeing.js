@@ -6,6 +6,8 @@ if ( document.querySelector('video') ) {
     }, 1);
 }
 
+/*-------------------------------------------------------------------------*/
+
 window.setInterval( () => {
     const urlPatternToBlock = [
         'cnn.com' ||
@@ -18,6 +20,8 @@ window.setInterval( () => {
         }
     }
 }, 1);
+
+/*-------------------------------------------------------------------------*/
 
 if (
   document.querySelector('title')?.textContent.includes('News') ||
