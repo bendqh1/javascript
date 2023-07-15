@@ -45,8 +45,5 @@ window.setInterval( () => {
 
 // Add in the script call itself this structure:
 
-// @match *://*cnn.com/*
-if ( window.location.href.includes('cnn.com') ) { window.open("https://google.com/", "_self"); }
-
-// @match *://*search.google.com/search-console/*
-if ( window.location.href.includes('https://search.google.com/search-console/about') ) { window.open("https://google.com/", "_self"); }
+// @match *://DOMAIN_TLD_1/*/*
+/* if ( window.location.href.includes('https://DOMAIN_TLD_1/search-console/about') ) { window.open("https://google.com/", "_self"); } */
