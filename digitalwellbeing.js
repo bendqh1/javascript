@@ -17,7 +17,7 @@ window.setInterval(()=>{
 
 window.setInterval( () => {
     const urlPatternToBlock = [
-        'cnn' ||
+        'cnn',
         'search-console'
     ];
 
