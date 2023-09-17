@@ -5,20 +5,20 @@ const myClone = document.querySelector('.EXISTING_ELEMENT_TO_CLONE').cloneNode(t
 // Create and append an element inside which the clone will appear
 
 document.body.insertAdjacentHTML('beforeend', `
-	<aside class="cbwtphone_wrapper">
+	<aside class="my_new_call_now_button">
 	</aside>
 `)
 
 // Append the clone into the created-appended element
 
-document.querySelector('.cbwtphone_wrapper').appendChild(myClone);
+document.querySelector('.my_new_call_now_button').appendChild(myClone);
 
 // Create style to the new element in which the clone appears
 
 newStyle = document.createElement("style");
 newStyle.type = "text/css";
 newStyle.innerHTML +=`
-    .cbwtphone_wrapper {
+    .my_new_call_now_button {
         display: flex;
 	    align-items: center;
 	    justify-content: center;
@@ -33,19 +33,19 @@ newStyle.innerHTML +=`
 	    background: linear-gradient(-160deg,#2494db 0%,#0d7ab8 78.66%);
     }
 
-    .cbwtphone_wrapper a {
+    .my_new_call_now_button a {
         color: #fff
     }
-    .cbwtphone_wrapper a:hover {
+    .my_new_call_now_button a:hover {
         color: #000 !important;
     }
-    .cbwtphone_wrapper a:focus {
+    .my_new_call_now_button a:focus {
         color: yellow;
     }
-    .cbwtphone_wrapper a:active {
+    .my_new_call_now_button a:active {
         color: yellow;
     }
-    .cbwtphone_wrapper a:visited {
+    .my_new_call_now_button a:visited {
         color: #fff;
     }
 `;
