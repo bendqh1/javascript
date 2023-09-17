@@ -34,16 +34,16 @@ newStyle.innerHTML +=`
     }
 
     .my_new_call_now_button a {
-        color: #fff
+        color: #fff;
     }
     .my_new_call_now_button a:hover {
         color: #000 !important;
     }
     .my_new_call_now_button a:focus {
-        color: yellow;
+        color: yellow !important;
     }
     .my_new_call_now_button a:active {
-        color: yellow;
+        color: yellow !important;
     }
     .my_new_call_now_button a:visited {
         color: #fff;
