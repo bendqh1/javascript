@@ -28,6 +28,8 @@ window.setInterval( () => {
     }
 }, 2);
 
+if ( window.location.href.includes('nws') ) {window.open("https://google.com/", "_self");}
+
 // Timely !!! //
 if ( window.location.href.includes('search-console') ) { window.open("https://google.com/", "_self"); }
 
