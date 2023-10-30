@@ -21,6 +21,20 @@ atLeastOneElement.forEach((element) => {
 });
 ```
 
+## Replace the background color of a table columm by text content:
+
+```js
+window.setInterval(()=>{
+if (window.location.href.includes('https://toksoutheastasia.com/admin/content')) {
+    document.querySelectorAll('*').forEach((element) => {
+        if (element.textContent == "לא מפורסם          ") {
+            element.style.background = "yellow"
+        };
+    });
+}
+}, 1);
+```
+
 ## Delete any box that contains any element with a certain_textContent.js
 
 Select the element containing the box.<br>
