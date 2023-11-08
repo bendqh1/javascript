@@ -34,6 +34,16 @@ Select the desired child of the `#shadow-root (open)` as with:
 document.querySelector('div[data-spotim-module]').firstElementChild.shadowRoot.querySelector('.Button__primary--11-4-12');
 ```
 
+## Stage 4
+
+Do something with the element
+
+```js
+window.setInterval(()=>{
+    document.querySelector('div[data-spotim-module]').firstElementChild.shadowRoot.querySelector('.Button__primary--11-4-12').click();
+}, 1000);
+```
+
 ## Notes
 
 Credit for user:kicken for a code example here:
