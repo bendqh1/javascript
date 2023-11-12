@@ -3,7 +3,7 @@
 ### Way one
 
 ```js
-if (window.location.href.includes('https://toksoutheastasia.com/admin/content')) {
+if (window.location.href.includes('x')) {
     document.querySelectorAll('*').forEach((element) => {
         if (element.textContent == "x") {
             element.parentElement.style.background = "yellow"
@@ -18,7 +18,7 @@ A `<td>` is never the parent element of a `<td>` underneath it.
 ### Way two
 
 ```js
-if (window.location.href.includes('https://toksoutheastasia.com/admin/content')) {
+if (window.location.href.includes('x')) {
     document.querySelectorAll('*').forEach((element) => {
         if (element.textContent == "x") {
             element.closest("tr").style.background = "yellow"
