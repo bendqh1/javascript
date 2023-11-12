@@ -3,7 +3,6 @@
 ### Way one
 
 ```js
-window.setInterval(()=>{
 if (window.location.href.includes('https://toksoutheastasia.com/admin/content')) {
     document.querySelectorAll('*').forEach((element) => {
         if (element.textContent == "x") {
@@ -11,7 +10,6 @@ if (window.location.href.includes('https://toksoutheastasia.com/admin/content'))
         };
     });
 }
-}, 1);
 ```
 
 A `<tr>` is always a parent of one or more `<td>` element set.<br>
@@ -20,7 +18,6 @@ A `<td>` is never the parent element of a `<td>` underneath it.
 ### Way two
 
 ```js
-window.setInterval(()=>{
 if (window.location.href.includes('https://toksoutheastasia.com/admin/content')) {
     document.querySelectorAll('*').forEach((element) => {
         if (element.textContent == "x") {
@@ -28,5 +25,4 @@ if (window.location.href.includes('https://toksoutheastasia.com/admin/content'))
         };
     });
 }
-}, 1);
 ```
