@@ -14,7 +14,8 @@ if (window.location.href.includes('https://toksoutheastasia.com/admin/content'))
 }, 1);
 ```
 
-A `<tr>` is always a parent of one or more `<td>` element set; a `<td>` is never the parent element of a `<td>` underneath it. 
+A `<tr>` is always a parent of one or more `<td>` element set.<br>
+A `<td>` is never the parent element of a `<td>` underneath it.
 
 ### Way two
 
