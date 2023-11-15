@@ -7,6 +7,28 @@
 * HTML elements
 * Pseudo HTML elements (**possibly**)
 
+## `const` versus `let`
+
+Both `const` and `let` are parameters.
+
+* `const` holds value/s that principally shouldn't change.
+* `let` holds value/s that principally should change, for example:
+
+`const`:
+
+```js
+const allTableRowsExceptTableHeading = document.querySelectorAll('tr.odd, tr.even');
+```
+
+`let`:
+
+```js
+let baseNumber = 1;
+document.querySelectorAll('.numberCell').forEach((element)=>{
+    element.innerHTML = `<span>${baseNumber++}</span>`;
+});
+```
+
 ## DOM nodes
 
 * An HTML element
