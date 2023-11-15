@@ -1,4 +1,4 @@
-This works on Drupal `example.com/admin/structure/types` but change `'tr.odd, tr.even'` to just `tr` to make it work on general webpages.
+This works on Drupal `example.com/admin/structure/types` webpages but you can change `'tr.odd, tr.even'` to just `tr` to make it work on general webpages.
 
 ```js
 const allTableRowsExceptTableHeading = document.querySelectorAll('tr.odd, tr.even');
