@@ -1,6 +1,6 @@
 # Effect each `<tr>` by the content of a `<td>`
 
-* A `<tr>` is always a parent of one or more `<td>` element set, hence a `<td>` is never the parent element of a `<td>` underneath it.
+* A `<tr>` is always a parent of one or more `<td>` element set, hence, a `<td>` is never the parent element of a `<td>` underneath it.
 
 ## Way one
 
