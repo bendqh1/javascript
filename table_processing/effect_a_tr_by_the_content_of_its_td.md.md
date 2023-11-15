@@ -1,6 +1,6 @@
-## Effect each `<tr>` by a the content of its `<td>`.
+# Effect each `<tr>` by a the content of its `<td>`.
 
-### Way one
+## Way one
 
 ```js
 if (window.location.href.includes('x')) {
@@ -15,7 +15,7 @@ if (window.location.href.includes('x')) {
 A `<tr>` is always a parent of one or more `<td>` element set.<br>
 A `<td>` is never the parent element of a `<td>` underneath it.
 
-### Way two
+## Way two
 
 ```js
 if (window.location.href.includes('x')) {
