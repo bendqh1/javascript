@@ -1,4 +1,4 @@
-# Effect each `<tr>` by the content of a `<td>`.
+# Effect each `<tr>` by the content of a `<td>`
 
 ## Way one
 
