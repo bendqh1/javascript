@@ -1,7 +1,5 @@
-This works on Drupal `example.com/admin/structure/types` webpages but you can change `'tr.odd, tr.even'` to `tr` to make it work on generally any webpage with a table.
-
 ```js
-const allTableRowsExceptTableHeading = document.querySelectorAll('tr.odd, tr.even');
+const allTableRowsExceptTableHeading = document.querySelectorAll('tr');
 
 allTableRowsExceptTableHeading.forEach((element) => {
     const newCell = document.createElement('td');
@@ -24,6 +22,10 @@ document.querySelectorAll('.numberCell').forEach((element)=>{
     element.innerHTML = `<span>${baseNumber++}</span>`;
 });
 ```
+
+## Drupal
+
+For Drupal `example.com/admin/structure/types` webpages select `'tr.odd, tr.even'`.
 
 ## More information here:
 
