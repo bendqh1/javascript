@@ -2,11 +2,10 @@ In you favorite user script manager, run:
 
 ```js
 // ==UserScript==
-// @name         New Userscript
+// @name         block_all_websites_beside_this_website
 // @match        *://*/*
 
 // ==/UserScript==
-
 if (!window.location.href.includes('example.com')) {
     window.open("https://example.com/", "_self");
 }
