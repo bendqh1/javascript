@@ -4,6 +4,7 @@ In you favorite user script manager, run:
 // ==UserScript==
 // @name         block_all_websites_beside_this_website
 // @match        *://*/*
+// @run-at      document-start
 
 // ==/UserScript==
 if (!window.location.href.includes('example.com')) {
