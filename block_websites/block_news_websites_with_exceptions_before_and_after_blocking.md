@@ -1,12 +1,11 @@
 Note how the syntax is sorted here with extra white spaces and extra line breaks.
 
 ```js
+window.setInterval(()=>{
 if (
-   ( !window.location.href.includes('cnn') )
+   ( !window.location.href.includes('github') )
    &&
-   ( !window.location.href.includes('sitepoint') )
-   &&
-   ( !window.location.href.includes('ynet') )
+   ( !window.location.href.includes('SOME_SPECIFIC_WEBSITE') )
    &&
    (
    document.querySelector('title')?.textContent.toLowerCase().includes('news') ||
@@ -24,6 +23,7 @@ if (
    document.querySelector('meta[name="tags"]')?.content.includes('החדשות')
    )
    ) {
-         window.open("https://www.ynet.co.il/news/category/184", "_self");
+         window.open("https://SOME_SPECIFIC_WEBSITE/news/category/184", "_self");
    }
+}, 1000);
 ```
