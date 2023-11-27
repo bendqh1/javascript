@@ -10,4 +10,4 @@ const myInterval = setInterval(function(){
 });
 }, 2000);
 
-// For all THESE elements, set ALL_ELEMENTS, then FOREACH element do;
+// From ALL elements, select ALL_HTML_ELEMENTS, then for each element do ...
