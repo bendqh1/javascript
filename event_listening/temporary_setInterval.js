@@ -1,5 +1,5 @@
 const myInterval = setInterval( () => {
-  // Code
+    // code
 }, 0.);
 
 window.setTimeout( () => {
