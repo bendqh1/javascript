@@ -1,10 +1,10 @@
 ## Traditional
 
 ```js
-    var newScript = document.createElement("script");
-    newScript.setAttribute('type', 'text/javascript');
-    newScript.setAttribute('src', 'https://raw.githubusercontent.com/USER/REPOSITORY/main/FILE.js');
-    document.head.appendChild(newScript);
+var newScript = document.createElement("script");
+newScript.setAttribute('type', 'text/javascript');
+newScript.setAttribute('src', 'https://raw.githubusercontent.com/USER/REPOSITORY/main/FILE.js');
+document.head.appendChild(newScript);
 ```
 
 ## fetch and then
