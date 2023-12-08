@@ -43,7 +43,7 @@ document.querySelectorAll('.numberCell').forEach((element)=>{
 alert();
 console.log();
 document.write();
-document.cookie // output all cookies;
+document.cookie // output all cookies
 ```
 
 Fourth and Fifth ways, printign from a printer.
@@ -53,6 +53,13 @@ window.print();
 
 const x = document.write(document.cookie);
 window.print(x);
+```
+
+To store data quickly:
+
+```js
+const person = prompt('Please enter your name'); // input and output
+console.log(person);
 ```
 
 ## Replace an HTML structure in another (very dangerous and should generally be avoided)
