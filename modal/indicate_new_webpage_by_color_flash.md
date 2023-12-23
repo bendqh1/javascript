@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
 		window.setTimeout( () => {
 			document.querySelector('.my_unique_modal_class').remove();
-		}, 2000 );
+		}, 1000 );
 	}
 });
 ```
