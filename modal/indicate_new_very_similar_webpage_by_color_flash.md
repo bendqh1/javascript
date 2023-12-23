@@ -3,9 +3,9 @@ Indicate moving to a new webpage between webpage `A` and webpage `B` (edit `A` a
 ```js
 window.addEventListener('load', () => {
 	if (
-		window.location.href.includes('x')
+		window.location.href.includes('A')
 		||
-		window.location.href.includes('y')
+		window.location.href.includes('B')
 	) {
 		document.body.insertAdjacentHTML('beforeend', `
 		<div class="my_unique_modal_class"></div>
