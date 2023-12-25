@@ -1,3 +1,5 @@
+## Way 1 with targeting the modal object itself
+
 ```js
 document.body.insertAdjacentHTML('beforeend', `
 <div class="modal_wrapper">
@@ -53,7 +55,7 @@ document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
 });
 ```
 
-or:
+## Way 2 with targeting the window object
 
 ```js
 document.body.insertAdjacentHTML('beforeend', `
