@@ -5,7 +5,7 @@ const myInterval = setInterval( () => {
         left: 100,
         behavior: "instant",
     });
-}, 0.);
+}, 1);
 ```
 
 Or, temporarily:
