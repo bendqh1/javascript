@@ -6,18 +6,20 @@ const myInterval = setInterval( () => {
         behavior: "instant",
     });
 }, 0.);
-
-window.setTimeout( () => {
-  clearInterval(myInterval);
-}, 5000);
 ```
 
-One may need to use
+Or, temporarily:
 
 ```javascript
 const myInterval = setInterval( () => {
-	const [...elements] = document.getElementsByTagName("*");
-		elements.forEach((element) => {
-	});
-}, 0.);
+    window.scrollTo({
+        top: 100,
+        left: 100,
+        behavior: "instant",
+    });
+}, 1);
+
+window.setTimeout( ()=>{
+  clearInterval(myInterval);
+}, 5000);
 ```
