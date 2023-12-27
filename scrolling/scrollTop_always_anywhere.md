@@ -28,6 +28,7 @@ window.setTimeout( ()=>{
 
 ## Blocking scrolling in websites of some types
 
+```js
 window.setInterval( ()=>{
     if (
         ( !window.location.href.includes('github') )
@@ -47,3 +48,4 @@ window.setInterval( ()=>{
         });
     }
 }, 1);
+```
