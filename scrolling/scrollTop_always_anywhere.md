@@ -1,5 +1,5 @@
 ```javascript
-const myInterval = setInterval( () => {
+window.setInterval( () => {
     window.scrollTo({
         top: 100,
         left: 100,
