@@ -1,3 +1,5 @@
+## Instantly
+
 ```javascript
 window.setInterval( () => {
     window.scrollTo({
@@ -8,7 +10,7 @@ window.setInterval( () => {
 }, 1);
 ```
 
-Or, temporarily:
+## Temporarily
 
 ```javascript
 const myInterval = setInterval( () => {
@@ -23,3 +25,25 @@ window.setTimeout( ()=>{
   clearInterval(myInterval);
 }, 5000);
 ```
+
+## Blocking scrolling in websites of some types
+
+window.setInterval( ()=>{
+    if (
+        ( !window.location.href.includes('github') )
+        &&
+        ( !window.location.href.includes('benaharoni') )
+        &&
+        ( !window.location.href.includes('sitepoint') )
+        &&
+        (
+            // EACH BLOCKING CONDITION COMES HERE
+        )
+    ) {
+        window.scrollTo({
+            top: 100,
+            left: 100,
+            behavior: "instant",
+        });
+    }
+}, 1);
