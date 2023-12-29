@@ -51,6 +51,14 @@ newStyle.innerHTML +=`
 document.head.appendChild(newStyle);
 
 document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
+    document.querySelector('.modal_wrapper').remove();
+});
+```
+
+We could also do:
+
+```
+document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
     document.querySelector('.modal_closing_button').parentNode.remove();
 });
 ```
