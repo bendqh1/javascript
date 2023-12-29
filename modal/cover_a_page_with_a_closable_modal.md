@@ -55,7 +55,7 @@ document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
 });
 ```
 
-We could also do:
+### We could also do this in the end but it be longer and slightly slower perforemencewise
 
 ```js
 document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
