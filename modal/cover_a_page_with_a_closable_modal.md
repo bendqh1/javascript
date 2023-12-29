@@ -57,7 +57,7 @@ document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
 
 We could also do:
 
-```
+```js
 document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
     document.querySelector('.modal_closing_button').parentNode.remove();
 });
