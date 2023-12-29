@@ -50,7 +50,7 @@ newStyle.innerHTML +=`
 
 document.head.appendChild(newStyle);
 
-document.querySelector('.modal_wrapper').addEventListener('click', ()=>{
+document.querySelector('.modal_closing_button').addEventListener('click', ()=>{
     document.querySelector('.modal_wrapper').remove();
 });
 ```
