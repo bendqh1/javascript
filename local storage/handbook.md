@@ -1,13 +1,13 @@
 Currently there are two elementary ways to store data frontendly with JavaScript:
 
-1. **Local Storage** which is a special memory partition in a web browser.
 1. **Session Storage** which is a special memory partition for a current browser window-tab and possibly also any new window-tab derivatized from that window-tab.
-
-Local Storage will persist until it is cleared from the web browser's history.
+1. **Local Storage** which is a special memory partition in a web browser.
 
 Session Storage will persist as long as any relevant window-tab stays opened.
 
-Local Storage is an API with commands like:
+Local Storage will persist until it is cleared from the web browser's history.
+
+We can query either of these elementary frontend data storages with an API.
 
 ```js
 localStorage.setItem('first_example', 0);
