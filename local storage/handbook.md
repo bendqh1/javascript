@@ -1,11 +1,11 @@
-I know two types of web storage:
+Currently there are two elementary ways to store data frontendly with JavaScript:
 
-1. **Local Storage** AKA Browser History Storage
-1. **Session Storage** AKA Window Storage and possibly also any new window derivatized from that window
+1. **Local Storage** which is a special memory partition in a web browser.
+1. **Session Storage** which is a special memory partition for a current browser window-tab and possibly also any new window-tab derivatized from that window-tab.
 
-Local Storage AKA **Browser History Storage** will persist until the browser's history is cleared.
+Local Storage will persist until it is cleared from the web browser's history.
 
-Session storage or **Window Storage and possibly also any new window derivatized from that window** will persist as long as any relevant window stays opened.
+Session storage will persist as long as any relevant window-tab stays opened.
 
 Local Storage is an API with commands like:
 
@@ -29,10 +29,9 @@ localStorage.getItem('letters');
 localStorage.removeItem('letters');
 ```
 
-As can be noticed in a web browser console, we only get strings from LocalStorage; not numbers and not arrays.
+## Notes
 
-We can use `parseInt` method to turn a relevant string into a number.
-
-The `storage` event is fired each time a strorage is modified, either on browser session or on window session.
-
-Any web browser web development tool has a storage tab to check stored data.
+* As can be noticed in a web browser console, we only get strings from LocalStorage; not numbers and not arrays.
+* We can use `parseInt` method to turn a relevant string into a number.
+* The `storage` event is fired each time a strorage is modified, either on browser session or on window session.
+* Any web browser web development tool has a storage tab to check stored data.
