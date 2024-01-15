@@ -5,7 +5,7 @@ Currently there are two elementary ways to store data frontendly with JavaScript
 
 Local Storage will persist until it is cleared from the web browser's history.
 
-Session storage will persist as long as any relevant window-tab stays opened.
+Session Storage will persist as long as any relevant window-tab stays opened.
 
 Local Storage is an API with commands like:
 
@@ -33,5 +33,5 @@ localStorage.removeItem('letters');
 
 * As can be noticed in a web browser console, we only get strings from LocalStorage; not numbers and not arrays.
 * We can use `parseInt` method to turn a relevant string into a number.
-* The `storage` event is fired each time a strorage is modified, either on browser session or on window session.
+* The `storage` event is fired each time a strorage command is given (either about browser session or about window session).
 * Any web browser web development tool has a storage tab to check stored data.
