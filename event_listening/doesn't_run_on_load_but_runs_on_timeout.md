@@ -16,3 +16,11 @@ window.addEventListener('load', ()=>{
 ```
 
 The `setTimeout()` is timedout when anything executed between `load` and it finishes (if there is any). 
+
+A more brutal approach is:
+
+```js
+setInterva( ()=>{
+    // action
+}, 1 );
+```
