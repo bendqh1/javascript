@@ -14,8 +14,8 @@ if ( elementA.style.fontWeight == "bold" ) {
 ### Way two (should effect all CSS)
 
 ```js
-const elementA = document.querySelector('.layout__region--first p:first-child');
-const elementB = document.querySelector('.block-field-blocknodespecialbody p:nth-child(1)');
+const elementA = document.querySelector('#a');
+const elementB = document.querySelector('#b');
 
 const styleOfA = window.getComputedStyle(elementA).fontWeight;
 
