@@ -1,6 +1,6 @@
-How to change the style of an element by the style of another element in vanilla JavaScript:
+## How to change the style of an element by the style of another element in vanilla JavaScript:
 
-## Way one (may not effect pure CSS directives)
+### Way one (may not effect pure CSS directives)
 
 ```js
 const elementA = document.querySelector('#a');
@@ -11,7 +11,7 @@ if ( elementA.style.fontWeight == "bold" ) {
 };
 ````
 
-## Way two (should effect all CSS)
+### Way two (should effect all CSS)
 
 ```js
 const elementA = document.querySelector('.layout__region--first p:first-child');
