@@ -52,4 +52,4 @@ window.setInterval( ()=>{
 
 ## Notes
 
-* If the initial scrolling is not 100% top, change `top: 100` to `top: 1`.
+* If the **initial scrolling** is not 100% top (doesn't start toppest), then change `top: 100` to `top: 1`.
