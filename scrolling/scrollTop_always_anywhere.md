@@ -49,3 +49,7 @@ window.setInterval( ()=>{
     }
 }, 1);
 ```
+
+## Notes
+
+* If the initial scrolling is not 100% top, change `top: 100` to `top: 1`.
