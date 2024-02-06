@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>יצירת קשר</title>
+		<link rel="stylesheet" href="style.css"></link>
+		<link rel="stylesheet" href="behavior.css"></link>
+	</head>
+	<body class="inquire_product_by_h1" dir="rtl">
+		<h1 style="display: none">Lorem Ipsum</h1>
+		<div class="modal_wrapper">
+			<span class="modal_closing_button">X</span>
+
+			<script>
+				const productName = document.querySelector('h1').textContent;
+				const modalHeading = document.createElement('h2');
+				modalHeading.textContent = `אנו מבינים שאתה מעוניין במוצר ${productName} שלנו`;
+				document.querySelector('.modal_wrapper').appendChild(modalHeading);
+			</script>
+
+			<h3>אנא מלא את הפרטים להלן ונחזור אליך לגבי מוצר זה.</h3>
+			
+			<form action="mailto:bendqh1@gmail.com" method="get" enctype="text/plain">
+				<script>
+					internalMessage = `לקוח מעוניין במידע על ${h1}.textContent.;`
+				</script>
+
+				<label for="fname" dir="rtl">שם מלא:</label>
+				<input type="text" class="fname" name="name" required></input><br>
+
+				<label for="email" dir="rtl">אימייל:</label>
+				<input type="email" class="email" name="email" dir="ltr" required></input><br>
+
+				<label for="phone" dir="rtl">טלפון:</label>
+				<input type="tel" class="phone" name="phone" dir="ltr" required></input><br>
+
+				<input type="submit" class="submit" value="שלח"></input>
+			</form>
+
+		</div>
+	</body>
+	<script src="behavior.js"></script>
+</html>
