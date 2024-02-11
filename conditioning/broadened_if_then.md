@@ -12,6 +12,6 @@ if (
    document.querySelector('title')?.textContent.includes('d') 
    )
    ) {
-         // Do sftuff
+         // Do stuff
    }
 ```
