@@ -9,7 +9,7 @@ document.querySelector('a').scrollIntoView();
 ```js
 window.addEventListener('load', ()=>{
     return setTimeout( ()=>{
-        document.querySelector('#main > div.main-content > div.main-content__container.container > div').scrollIntoView()
+        document.querySelector('#x').scrollIntoView()
     })
 });
 ```
