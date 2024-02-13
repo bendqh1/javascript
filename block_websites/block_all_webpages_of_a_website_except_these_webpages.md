@@ -8,6 +8,6 @@ if (
     &&
     !window.location.href.includes('D') // preview-edit-page of edit-page
 ) {
-    window.location.href = 'A'; // every webpage which is not one of the three above leads to page A
+    window.location.href = 'A'; // every webpage of website A which is not one of B, C or D leads to webpage A
 }
 ```
