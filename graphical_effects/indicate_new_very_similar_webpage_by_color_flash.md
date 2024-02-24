@@ -1,4 +1,4 @@
-Indicate moving to a new webpage between webpage `A` and webpage `B` (edit `A` and `B` by direct links accordingly).
+Indicate moving from webpage `A` to webpage `B`.
 
 ```js
 window.addEventListener('load', () => {
