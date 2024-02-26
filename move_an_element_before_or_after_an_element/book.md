@@ -1,6 +1,10 @@
 ```js
-const element_1 = document.querySelector('#block-globalrs-hyshtknyslkbyntrnt'); // firstly select the element you want to move something before or after it
-const element_2 = document.querySelector('.field--name-field-qtgwryh'); // secondly select the element you want to move
+// firstly select the element you want to move something before or after it
+const element_1 = document.querySelector('#block-globalrs-hyshtknyslkbyntrnt');
 
-element_1.insertAdjacentElement('beforebegin', element_2); // before or after
+// secondly select the element you want to move
+const element_2 = document.querySelector('.field--name-field-qtgwryh');
+
+// before or after
+element_1.insertAdjacentElement('beforebegin', element_2);
 ```
