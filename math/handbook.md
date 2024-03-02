@@ -1,3 +1,23 @@
+## Clear modulo
+
+Modulo is a way to check if a division operation yields a remainder.
+
+```js
+let dividend = 10;
+let divisor = 3;
+let result = dividend % divisor;
+console.log(result); // returns the remainder of 1 
+```
+
+and:
+
+```
+let dividend = 10;
+let divisor = 2;
+let result = dividend % divisor;
+console.log(result); // returns the remainder of 0 (no remainder)
+```
+
 ## Calculate percentile shipping fee
 
 Calculate percentile shipping fee without `Math.round()` and with `Math.round()`.<br>
