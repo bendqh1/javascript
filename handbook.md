@@ -46,7 +46,7 @@ document.write();
 document.cookie // output all cookies
 ```
 
-Fourth and Fifth ways, printign from a printer.
+Fourth and Fifth ways, printing from a printer.
 
 ```js
 window.print();
