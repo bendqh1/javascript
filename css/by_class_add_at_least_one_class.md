@@ -9,5 +9,5 @@ const elementByClass = document.querySelectorAll([
 
 elementByClass.forEach((element)=>{
     element.classList.add('region--content', 'grid-full', 'layout--pass--content-medium');
-})
+});
 ```
