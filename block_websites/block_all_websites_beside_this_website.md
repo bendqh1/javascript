@@ -18,7 +18,7 @@ You may also want to block the website's homepage if this homepage is full of no
 
 ```js
 window.setTimeout( ()=>{
-    if (window.location.href === "https://www.youtube.com/") {
+    if (window.location.href === "https://www.example.com/") {
         window.location.href = "about:blank";
     }
 }, 1000);
