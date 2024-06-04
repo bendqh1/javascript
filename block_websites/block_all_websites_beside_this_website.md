@@ -16,7 +16,7 @@ Ensure to note that the negation (`!`) of the `includes()` test is far from it, 
 
 You may also want to block the website's homepage if this homepage is full of nonsense, then you can do:
 
-```
+```js
 window.setTimeout( ()=>{
     if (window.location.href === "https://www.youtube.com/") {
         window.location.href = "about:blank";
