@@ -53,4 +53,4 @@ window.setTimeout(()=>{
     document.querySelector('.modal_closing_button').addEventListener('click', ()=>{
         document.querySelector('.modal_wrapper').remove();
     });
-}, 5000);
+}, 1000);
