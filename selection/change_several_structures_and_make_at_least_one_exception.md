@@ -1,3 +1,5 @@
+Relevant if we change a Drupal-Olivero page with a `main content block` and `secondary content blocks` underneath it (we change all, then make exception for the `main content block`).
+
 ```js
 if ( document.querySelector('.site-main') ) {
     if ( document.querySelector('region--content') ) {
