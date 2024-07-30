@@ -9,3 +9,5 @@ if ( document.querySelectorAll('.region--content .blcok') ) {
 
 document.querySelector('.node__content').style.backgroundColor = "white";
 ```
+
+Easier to do similar actions with [CSS exceptions](https://github.com/bendqh1/css/blob/main/exception.md) especially when comparing `class-having` elements to `id-having` elements.
