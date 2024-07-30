@@ -4,10 +4,12 @@ This is relevant, for example, if we change a [Drupal-Olivero](https://www.drupa
 if ( document.querySelectorAll('.region--content .blcok') ) {
     document.querySelectorAll('.region--content .blcok').forEach( (element)=>{
         element.style.backgroundColor = "red";
+        element.style.padding = "50px";
     });
 };
 
-document.querySelector('.node__content').style.backgroundColor = "white";
+document.querySelector('#block-globalrs-content').style.backgroundColor = "#fff";
+document.querySelector('#block-globalrs-content').style.padding = "initial";
 ```
 
 Easier to do similar actions with [CSS exceptions](https://github.com/bendqh1/css/blob/main/exception.md) especially when comparing `class-having` elements to `id-having` elements.
