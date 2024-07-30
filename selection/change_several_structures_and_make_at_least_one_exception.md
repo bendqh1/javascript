@@ -12,7 +12,7 @@ if ( document.querySelector('.site-main') ) {
 document.querySelector('.node__content').style.backgroundColor = "white";
 ```
 
-## CSS
+## CSS that didn't work
 
 ```css
 .region--content .block:not(.node__content) {
