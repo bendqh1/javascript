@@ -16,6 +16,6 @@ With CSS:
 
 ```css
 .region--content .block:not(.node__content) {
-	background: whitesmoke
+	background: red;
 }
 ```
