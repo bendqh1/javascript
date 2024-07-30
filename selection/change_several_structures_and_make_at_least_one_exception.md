@@ -11,3 +11,11 @@ if ( document.querySelector('.site-main') ) {
 
 document.querySelector('.node__content').style.backgroundColor = "white";
 ```
+
+With CSS:
+
+```css
+.region--content .block:not(.node__content) {
+	background: whitesmoke
+}
+```
