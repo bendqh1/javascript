@@ -1,3 +1,6 @@
+The following code can be added to behavior.js
+
+```js
 document.body.insertAdjacentHTML('beforeend', `
     // HTML COMES HERE
 `)
@@ -8,3 +11,4 @@ newStyle.innerHTML +=`
     // CSS COMES HERE
 `;
 document.head.appendChild(newStyle);
+```
