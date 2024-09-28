@@ -12,3 +12,5 @@ newStyle.innerHTML +=`
 `;
 document.head.appendChild(newStyle);
 ```
+
+// The CSS could also be put in a separate CSS file; desirably one that runs backendly.
