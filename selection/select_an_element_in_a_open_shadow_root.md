@@ -54,4 +54,4 @@ https://www.sitepoint.com/community/t/how-to-select-an-element-added-to-the-dom-
 
 ### 2)
 
-`<ow-j3eolsu49kg> is what's known as a non standard tag or non semantic tag or cryptic tag.
+`<ow-j3eolsu49kg>` is what's known as a non standard tag or non semantic tag or cryptic tag.
