@@ -46,6 +46,12 @@ window.setInterval(()=>{
 
 ## Notes
 
+### 1)
+
 Credit for user:kicken for a code example here:
 
-* https://www.sitepoint.com/community/t/how-to-select-an-element-added-to-the-dom-dynamically/430203/1
+https://www.sitepoint.com/community/t/how-to-select-an-element-added-to-the-dom-dynamically/430203/1
+
+### 2)
+
+`<ow-j3eolsu49kg> is what's known as a non standard tag or non semantic tag or cryptic tag.
