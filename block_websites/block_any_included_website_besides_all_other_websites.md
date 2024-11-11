@@ -2,7 +2,7 @@ One may try this:
 
 ```js
 // ==UserScript==
-// @name         block_any_website_listed_besides_all_other_websites
+// @name         block_any_included_website_besides_all_other_websites
 // @match        *://*/*
 // @run-at       document-start
 
