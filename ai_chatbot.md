@@ -20,6 +20,7 @@ In your answer, don't mention the following concepts:
 * Debugging tips
 * console.log()
 * timing
+* @run-at
 * document-start
 * document-idle
 * document-end
@@ -31,5 +32,8 @@ In your answer, don't mention the following concepts:
 * Redirection conflics or Multiple Redirects
 * Redirection blocking
 * Other browser extensions or browser extension conflicts
+* User Script Manager environment
+* User Script Manager permissions
+* Redirect Loops or Interference from Other Extensions
 
 Now then, after ignoring the concepts that I have asked you not to mention, what are possible other causes for the script to work only form console but not from a userscript?
