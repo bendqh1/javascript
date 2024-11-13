@@ -37,6 +37,12 @@ document.querySelectorAll('.numberCell').forEach((element)=>{
 
 `textContent` is not a node but special property.
 
+To copy all DOM nodes of a given DOM do:
+
+```js
+copy(document.documentElement.outerHTML);
+```
+
 ## Main ways to get output via JavaScript
 
 ```js
