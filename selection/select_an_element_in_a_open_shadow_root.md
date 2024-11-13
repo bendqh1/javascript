@@ -1,3 +1,7 @@
+The shadowRoot property is a key concept in web development related to Web Components and Shadow DOM. It is a property of an HTML element that represents the root of the shadow tree for an element that has been assigned a shadow DOM.
+
+A shadowRoot can be open or closed and this deals with open ones.
+
 ## Stage 1
 
 Select the *wrapper element* **nearest above** the `#shadow-root (open)` pseudo element, by some attribute. For exmaple, if it doesn't have a CSS ID or CSS class then an **attribue alone** or an attribute and a value:
