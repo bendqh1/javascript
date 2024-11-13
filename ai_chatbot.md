@@ -15,7 +15,7 @@ if ( window.location.href.includes('wikipedia.org') ) {
 }, 100);
 ```
 
-In your answer, don't mention the following concepts:
+In your answer and throughout our communication, don't mention the following concepts:
 
 * Debugging tips
 * console.log()
@@ -27,13 +27,28 @@ In your answer, don't mention the following concepts:
 * @match
 * @grant
 * @noframes
+
+In your answer and throughout our communication, also don't mention the following concepts:
+
+* User Script Manager environment
+* * User Script Manager permissions
+* JavaScript libraries
+* JavaScript modules
+* Ajax
 * setTimeout()
 * setInterval()
-* Redirection conflics or Multiple Redirects
 * Redirection blocking
-* Other browser extensions or browser extension conflicts
-* User Script Manager environment
-* User Script Manager permissions
-* Redirect Loops or Interference from Other Extensions
+* Redirection conflics or Multiple Redirects
+* * Redirect Loops or Interference from Other Extensions
+* Browser extension conflicts or Other browser extensions
 
-Now then, after ignoring the concepts that I have asked you not to mention, what are possible other causes for the script to work only form console but not from a userscript?
+In your answer and throughout our communication, also don't mention the following concepts:
+
+* Execution Environment Context
+* Document or Page State
+* Document Referrer and Navigation Context
+* Browser's History and Back Navigation
+* Stateful Browsing and Session Handling
+* User Permissions and Privacy Settings
+
+Now then, after ignoring and agreeing to ignore the concepts that I have asked you not to mention, what possible and plausible other causes cause for the script to work only form console but not from a userscript?
