@@ -1,1 +1,1 @@
-Prevent a certain groupish website's modalic takingover is at `event_listening` directory.
+The function to prevent a certain groupish website modalic takingover is at `event_listening` directory.
