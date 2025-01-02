@@ -1,3 +1,13 @@
+## Didn't work 1
+
+```js
+// Go to the chatbot website
+window.open("https://google.com/", "_self");
+window.open("https://example.com/", "_self"); // The chatbot website
+```
+
+## Didn't work 2
+
 ```js
 // ==UserScript==
 // @name         x
@@ -7,14 +17,33 @@
 // ==/UserScript==
 
 window.setInterval( ()=>{
-    document.querySelector('[id^="radix-\\:r"] > div > div > a').click();
+    document.querySelector('[id^="radix-\\:r'] > div > div > a').click();
+}, 100);
+```
+
+## Didn't work 3
+
+```
+// ==UserScript==
+// @name         x
+// @match        https://example.com
+// @run-at       document-start
+
+// ==/UserScript==
+
+window.setInterval( ()=>{
+    document.querySelector('#radix-\\:r[a-j0-9]+\\: > div > div > a'] > div > div > a').click();
 }, 100);
 
-/*
-This CSS wildcard matches to this regex:
-#radix-\\:r[a-j0-9]+\\: > div > div > a
+## Didn't work 4
 
-It also matches:
+```js
+// ==UserScript==
+// @name         x
+// @match        https://example.com
+// @run-at       document-start
+
+// ==/UserScript==
 
 const mySelectors = [
   '#radix-\\:ra\\: > div > div > a',
@@ -54,8 +83,3 @@ if (matchedElement) {
 
 */
 ```
-
-## Didn't work
-
-window.open("https://google.com/", "_self");
-window.open("https://example.com/", "_self"); // The chatbot website
