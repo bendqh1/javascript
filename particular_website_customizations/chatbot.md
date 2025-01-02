@@ -74,6 +74,4 @@ for (const selector of mySelectors) {
 if (matchedElement) {
   matchedElement.click();
 };
-
-*/
 ```
