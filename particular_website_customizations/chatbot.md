@@ -25,21 +25,6 @@ window.setInterval( ()=>{
 
 ## Didn't work 3
 
-```
-// ==UserScript==
-// @name         x
-// @match        https://example.com
-// @run-at       document-start
-
-// ==/UserScript==
-
-window.setInterval( ()=>{
-    document.querySelector('#radix-\\:r[a-j0-9]+\\: > div > div > a'] > div > div > a').click();
-}, 100);
-```
-
-## Didn't work 4
-
 ```js
 // ==UserScript==
 // @name         x
