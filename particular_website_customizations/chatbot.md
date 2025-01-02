@@ -5,7 +5,7 @@
 ```js
 // Go to the chatbot website
 window.open("https://google.com/", "_self");
-window.open("https://example.com/", "_self"); // The chatbot website
+window.open("https://example.com/", "_self");
 ```
 
 ## Didn't work 2
