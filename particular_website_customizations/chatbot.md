@@ -19,7 +19,7 @@ window.open("https://example.com/", "_self"); // The chatbot website
 // ==/UserScript==
 
 window.setInterval( ()=>{
-    document.querySelector('[id^="radix-\\:r'] > div > div > a').click();
+    document.querySelector('[id^="radix-\\:r"] > div > div > a').click();
 }, 100);
 ```
 
