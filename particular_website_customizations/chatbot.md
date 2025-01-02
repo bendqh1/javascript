@@ -54,3 +54,8 @@ if (matchedElement) {
 
 */
 ```
+
+## Didn't work
+
+window.open("https://google.com/", "_self");
+window.open("https://example.com/", "_self"); // The chatbot website
