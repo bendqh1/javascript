@@ -3,7 +3,13 @@
 ## Didn't work 1
 
 ```js
-// Go to the chatbot website
+// ==UserScript==
+// @name         x
+// @match        https://example.com
+// @run-at       document-start
+
+// ==/UserScript==
+
 window.open("https://google.com/", "_self");
 window.open("https://example.com/", "_self");
 ```
