@@ -1,20 +1,6 @@
 **Change `example.com` accordingly.**
 
-## Didn't work 1
-
-```js
-// ==UserScript==
-// @name         x
-// @match        https://example.com
-// @run-at       document-start
-
-// ==/UserScript==
-
-window.open("https://google.com/", "_self");
-window.open("https://example.com/", "_self");
-```
-
-## Didn't work 2
+## Way 1
 
 ```js
 // ==UserScript==
@@ -29,7 +15,7 @@ window.setInterval( ()=>{
 }, 100);
 ```
 
-## Didn't work 3
+## Way 2
 
 ```js
 // ==UserScript==
@@ -75,3 +61,36 @@ if (matchedElement) {
   matchedElement.click();
 };
 ```
+
+## Alternative approach
+
+```js
+## Didn't work 1
+
+```js
+// ==UserScript==
+// @name         x
+// @match        https://example.com
+// @run-at       document-start
+
+// ==/UserScript==
+
+window.open("https://google.com/", "_self");
+window.open("https://example.com/", "_self");
+```
+
+## If none works
+
+Try this:
+
+```js
+// ==UserScript==
+// @name         x
+// @match        https://example.com
+// @run-at       document-start
+
+// ==/UserScript==
+alert("Hi");
+```
+
+If it still doesn't work, try to enable `developer mode`.
