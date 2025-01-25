@@ -58,12 +58,28 @@ https://www.sitepoint.com/community/t/how-to-select-an-element-added-to-the-dom-
 
 ### 2)
 
-`<ow-j3eolsu49kg>` is what's known as a non standard tag or non semantic tag or cryptic tag.
+`<ow-j3eolsu49kg>` is what's known as a non standard tag or non semantic tag or cryptic tag or **custom element**.
 
-### 3) What it was last time
-
-document.querySelector('#SyIRuqcA11dkl > div > div:nth-child(2)').firstElementChild.shadowRoot.querySelector('div > div > ow-ads_conversation > div > div > div > div > div > div > div.ToastWrapper__providerContainer--11-5-7 > div.spcv_conversation > div:nth-child(7) > div > button > span > span > span').click();
+### 3) The custom element here is dynamic.
 
 ### 4) In the particular website
 
 In the particular website make sure to mark only the text of the button, not the button itself (the button-linkage is JavaScriptly cloned from the text itself ha ha ha).
+
+## Alternative
+
+```js
+const elements = document.querySelectorAll('*');
+
+for (let element of elements) {
+  if ( element.tagName.toLowerCase().includes('ow-')) {
+    firstOwElement = element;
+  }
+}
+
+firstOwElement.shadowRoot.querySelectorAll('*').forEach( (element)=>{
+    if ( element.querySelector('div > div > ow-ads_conversation > div > div > div > div > div > div > div.ToastWrapper__providerContainer--11-5-7 > div.spcv_conversation > div:nth-child(7) > div > button > span > span > span') ) {
+        element.click();
+    }
+});
+```
