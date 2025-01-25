@@ -69,17 +69,19 @@ In the particular website make sure to mark only the text of the button, not the
 ## Alternative
 
 ```js
-const elements = document.querySelectorAll('*');
-
-for (let element of elements) {
-  if ( element.tagName.toLowerCase().includes('ow-')) {
-    firstOwElement = element;
-  }
-}
-
-firstOwElement.shadowRoot.querySelectorAll('*').forEach( (element)=>{
-    if ( element.querySelector('div > div > ow-ads_conversation > div > div > div > div > div > div > div.ToastWrapper__providerContainer--11-5-7 > div.spcv_conversation > div:nth-child(7) > div > button > span > span > span') ) {
-        element.click();
+window.setInterval(()=>{
+    const elements = document.querySelectorAll('*');
+    
+    for (let element of elements) {
+      if ( element.tagName.toLowerCase().includes('ow-')) {
+        firstOwElement = element;
+      }
     }
-});
+    
+    firstOwElement.shadowRoot.querySelectorAll('*').forEach( (element)=>{
+        if ( element.querySelector('div > div > ow-ads_conversation > div > div > div > div > div > div > div.ToastWrapper__providerContainer--11-5-7 > div.spcv_conversation > div:nth-child(7) > div > button > span > span > span') ) {
+            element.click();
+        }
+    });
+}, 1000);
 ```
