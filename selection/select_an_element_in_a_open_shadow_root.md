@@ -93,4 +93,33 @@ window.setInterval(()=>{
     });
 
 }, 1000);
+
+window.setInterval(()=>{
+    const elements = document.querySelectorAll('*');
+    
+    for (let element of elements) {
+      if ( element.tagName.toLowerCase().includes('ow-')) {
+        firstOwElement = element;
+      }
+    }
+    
+    // Show all comments
+    firstOwElement.shadowRoot.querySelectorAll('*').forEach( (element)=>{
+        if ( element.querySelector('div > div > ow-ads_conversation > div > div > div > div > div > div > div.ToastWrapper__providerContainer--11-5-7 > div.spcv_conversation > div:nth-child(7) > div > button > span > span > span') ) {
+            element.click();
+        }
+    });
+
+    // Show sub-comments
+    firstOwElement.shadowRoot.querySelectorAll('*').forEach( (element)=>{
+        if ( element.textContent.includes('תגובה אחת') || element.textContent.includes('תגובות') ) {
+            element.click();
+        }
+    });
+
+}, 1000);
+
+window.setTimeout( () => {
+    clearInterval(myInterval);
+}, 15000);
 ```
