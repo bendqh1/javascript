@@ -3,7 +3,23 @@ Target some common events and prevent them from this point in time onwards, in a
 First we prevent the events' defautlt behavior and then any further propogation.
 
 ```js
-const events = ['mousedown', 'mouseup', 'scroll', 'touchstart', 'touchend', 'submit', 'focus', 'blur', 'input', 'change', 'keypress', 'keydown', 'keyup'];
+const events = [
+  'mousedown',
+  'mouseup',
+  'scroll',
+  'wheel',
+  'touchmove',
+  'touchstart',
+  'touchend',
+  'submit',
+  'focus',
+  'blur',
+  'input',
+  'change',
+  'keypress',
+  'keydown',
+  'keyup'
+];
 
 events.forEach(eventType => {
   document.addEventListener(eventType, function(event) {
