@@ -11,4 +11,13 @@ events.forEach(eventType => {
     event.stopPropagation();
   }, true);
 });
+
+const observer = new MutationObserver(() => {
+  document.body.style.animation = 'none !important';
+  document.body.style.transition = 'none !important';
+  //  Force the browser to update the layout and can effectively cancel any ongoing animation
+  document.body.offsetHeight;
+});
+
+observer.observe(document.body, { attributes: true, childList: true, subtree: true });
 ```
