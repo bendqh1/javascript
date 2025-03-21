@@ -3,7 +3,7 @@ Target some common events and prevent them from this point in time onwards, in a
 First we prevent the events' defautlt behavior and then any further propogation.
 
 ```js
-const nonPassiveEvents = [
+const activeEvents = [
   // Passive events such as scroll and touchmove should not be included.
   'mousedown',
   'mouseup',
@@ -20,7 +20,7 @@ const nonPassiveEvents = [
   'keyup'
 ];
 
-nonPassiveEvents.forEach(eventType => {
+activeEvents.forEach(eventType => {
   document.addEventListener(eventType, function(event) {
     event.preventDefault();
     event.stopPropagation();
