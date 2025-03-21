@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name         New Userscript
+// @match        *://*/*
+// ==/UserScript==
+
+const today = new Date(); // Today's date
+const date1 = new Date('2025-03-20');
+const date2 = new Date('2025-03-21');
+
+if ( window.location.href.includes('google') &&
+     today.toDateString() === date1.toDateString() || today.toDateString() === date2.toDateString()
+)
+{
+  document.querySelector('#gb').remove();
+}
