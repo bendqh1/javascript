@@ -12,11 +12,15 @@ events.forEach(eventType => {
   }, true);
 });
 
+You may want to try:
+
+```js
 const observer = new MutationObserver(() => {
-  document.body.style.animation = 'none !important';
-  document.body.style.transition = 'none !important';
-  //  Force the browser to update the layout and can effectively cancel any ongoing animation
-  document.body.offsetHeight;
+  document.querySelectorAll('*').forEach(element => {
+    element.style.animation = 'none';
+    element.style.animationPlayState = 'paused';
+    element.style.transition = 'none';
+  });
 });
 
 observer.observe(document.body, { attributes: true, childList: true, subtree: true });
