@@ -8,6 +8,8 @@ It’s strange that **Tampermonkey** > **Dashboard** > **Settings** > **Config m
 
 ## 2) The script may be disabled or the User Script Manager may be disabled or both
 
+...
+
 ## 3) Misc
 
 Try adding:
