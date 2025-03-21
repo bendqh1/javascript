@@ -11,6 +11,7 @@ events.forEach(eventType => {
     event.stopPropagation();
   }, true);
 });
+```
 
 You may want to try:
 
