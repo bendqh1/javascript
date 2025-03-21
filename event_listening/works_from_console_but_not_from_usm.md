@@ -17,3 +17,5 @@ Try adding:
 ```js
 // @run-at      document-start
 ```
+
+It might fail if the DOM isn’t loaded at document-start, so consider switching to document-end if you notice issues.
