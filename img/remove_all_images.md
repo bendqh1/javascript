@@ -1,7 +1,7 @@
 ```js
 document.querySelectorAll('img').forEach( (element)=>{
   element.remove();
-}
+});
 ```
 
 ```js
@@ -13,3 +13,5 @@ allElements.forEach(element => {
   }
 });
 ```
+
+One may need to block image reapparance after mouse hover and other similar events.
