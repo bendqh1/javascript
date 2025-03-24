@@ -8,7 +8,7 @@ window.setInterval( ()=>{
 
 This will not work because `autoplay` is a property, not a method.
 
-We could try:
+We could try removing this property repeatedly.
 
 ```js
 window.setInterval( ()=>{
