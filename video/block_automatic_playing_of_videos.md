@@ -6,16 +6,14 @@ window.setInterval( ()=>{
 }, 1);
 ```
 
-Or
+This will not work because `autoplay` is a property, not a method.
+
+We could try:
 
 ```js
-const observer = new MutationObserver(() => {
-  document.querySelectorAll('video').forEach(video => {
-    if (video.autoplay) {
-      video.autoplay = false;
-    }
-  });
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
+window.setInterval( ()=>{
+    document.querySelectorAll('video').forEach(video => {
+      video.removeAttribute('autoplay');
+    });
+}, 1);
 ```
