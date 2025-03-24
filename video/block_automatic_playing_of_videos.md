@@ -2,7 +2,6 @@
 window.setInterval( ()=>{
     document.querySelectorAll('video').forEach(video => {
       video.autoplay = false;
-      video.pause();
     });
 }, 1);
 ```
@@ -14,7 +13,6 @@ const observer = new MutationObserver(() => {
   document.querySelectorAll('video').forEach(video => {
     if (video.autoplay) {
       video.autoplay = false;
-      video.pause();
     }
   });
 });
