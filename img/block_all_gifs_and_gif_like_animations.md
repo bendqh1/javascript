@@ -4,5 +4,8 @@ We will target all gif files but also some strange elements like `js-video` that
 document.querySelectorAll('js-video, img[src*="gif"]').forEach((element)=>{
     element.remove();
 });
-// From all elements, remove each `img` with `src` of `gif`.
 ```
+
+## Notes
+
+* From all elements, remove each `img` with `src` of `gif`.
