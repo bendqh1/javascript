@@ -93,7 +93,9 @@ window.setInterval(()=>{
     });
 
 }, 1000);
+```
 
+```js
 window.setTimeout( () => {
     clearInterval(myInterval);
 }, 15000);
