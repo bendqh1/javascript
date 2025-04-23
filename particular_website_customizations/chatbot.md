@@ -13,6 +13,10 @@
 window.setInterval( ()=>{
     document.querySelector('[id^="radix-\\:r"] > div > div > a').click();
 }, 100);
+
+window.setInterval( ()=>{
+    document.querySelector('[id^="radix-«r"] > div > div > a').click();
+}, 100);
 ```
 
 ## Way 2
