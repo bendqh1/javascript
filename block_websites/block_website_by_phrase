@@ -1,9 +1,0 @@
-window.setInterval ( ()=>{
-
-  if (document.body.innerText.includes('x') {
-    return;
-  }
-
-// REST OF THE CODE COMES HERE
-
-}, 1);
