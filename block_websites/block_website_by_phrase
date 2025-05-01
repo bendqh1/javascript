@@ -1,11 +1,9 @@
-if (document.body.innerText.includes('x') {
+window.setInterval ( ()=>{
 
-  document.body.innerHTML = "<h1>Blocked</h1>";
+  if (document.body.innerText.includes('x') {
+    return;
+  }
 
-}
+// REST OF THE CODE COMES HERE
 
-if (!document.body.innerText.includes('x') {
-
-  document.body.innerHTML = "<h1>Blocked</h1>";
-
-}
+}, 1);
