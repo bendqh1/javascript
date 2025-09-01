@@ -9,5 +9,5 @@ document.querySelectorAll('*').forEach( (element)=>{
 It may be an ID instead of a class; I was sure it was a class, but it was an ID. Pseudocode:
 
 ```js
-document.querySelector('#X').SOMETHING.
+document.querySelector('#X').style.padding = "0";
 ```
