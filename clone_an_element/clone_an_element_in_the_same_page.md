@@ -10,10 +10,3 @@ const i = setInterval(() => {
 }, 100);
 </script>
 ```
-
-Clone an element.
-
-```js
-const myClone = document.querySelector('.b').cloneNode(true);
-document.querySelector('.a').appendChild(myClone);
-```
