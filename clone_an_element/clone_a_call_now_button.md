@@ -11,8 +11,5 @@ Clone an element.
 
 ```js
 const myClone = document.querySelector('.b').cloneNode(true);
-
-// Append the clone into the created-appended element above
-
 document.querySelector('.a').appendChild(myClone);
 ```
