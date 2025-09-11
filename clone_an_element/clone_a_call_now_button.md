@@ -1,4 +1,4 @@
-Create and append an element inside which a clone will appear
+Create and append an element inside which a clone will appear.
 
 ```js
 document.body.insertAdjacentHTML('beforeend', `
@@ -7,7 +7,7 @@ document.body.insertAdjacentHTML('beforeend', `
 `)
 ```
 
-Clone an element
+Clone an element.
 
 ```js
 const myClone = document.querySelector('.b').cloneNode(true);
