@@ -1,3 +1,6 @@
+Image blocking should be done at the browser level.
+
+```js
 // ==UserScript==
 // @name        digital_wellbeing
 // @run-at      document-start
@@ -56,3 +59,4 @@ if (
 ) {
   window.open("https://google.com/", "_self");
 }
+```
