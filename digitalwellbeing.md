@@ -1,4 +1,8 @@
-Image blocking should be done at the browser level.
+Image blocking should be done at the browser level but I don't know a browser level way to block `alt` attributes of images so I block them with JavaScript in the following script.
+
+## Digital Well Being
+
+The following script removes videos, image alts and news websites.
 
 ```js
 // ==UserScript==
@@ -6,6 +10,8 @@ Image blocking should be done at the browser level.
 // @run-at      document-start
 // @match       *://*/*
 // ==/UserScript==
+
+document.querySelectorAll('img').forEach(image => image.removeAttribute('alt'));
 
 window.setInterval(()=>{
     if ( document.querySelector('video') ) {
@@ -15,28 +21,6 @@ window.setInterval(()=>{
         });
     }
 }, 1);
-
-/*-------------------------------------------------------------------------*/
-
-window.setInterval( () => {
-    const urlPatternToBlock = [
-        'cnn',
-        'search-console'
-    ];
-
-    for (let element of urlPatternToBlock) {
-        if ( window.location.href.includes(urlPatternToBlock) ) {
-            window.open("https://google.com/", "_self");
-        }
-    }
-}, 2);
-
-if ( window.location.href.includes('nws') ) {window.open("https://google.com/", "_self");}
-
-// Timely !!! //
-if ( window.location.href.includes('search-console') ) { window.open("https://google.com/", "_self"); }
-
-/*-------------------------------------------------------------------------*/
 
 if (
   document.querySelector('title')?.textContent.includes('News') ||
@@ -59,4 +43,30 @@ if (
 ) {
   window.open("https://google.com/", "_self");
 }
+```
+
+### One may want to add the following modules
+
+#### Block any particular website
+
+```js
+// Timely !!! //
+if ( window.location.href.includes('search-console') ) { window.open("https://google.com/", "_self"); }
+```
+
+Or:
+
+```js
+window.setInterval( () => {
+    const urlPatternToBlock = [
+        'cnn',
+        'search-console'
+    ];
+
+    for (let element of urlPatternToBlock) {
+        if ( window.location.href.includes(urlPatternToBlock) ) {
+            window.open("https://google.com/", "_self");
+        }
+    }
+}, 2);
 ```
