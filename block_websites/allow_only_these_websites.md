@@ -22,10 +22,11 @@ Allow only these websites.
 
     // replace www. with nothing.
     const host = location.hostname.replace(/^www\./, "");
-```
+
     // if a the domain name and the TLD are one of the above combinations (ignoring subdomains) then allow the website indeed.
     if (!allowedWebsites.some(domain => host.endsWith(domain))) {
         window.location.href = "about:blank";
     }
 
 })();
+```
