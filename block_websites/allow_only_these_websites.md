@@ -17,7 +17,14 @@ Allow only these websites.
         "grok.com",
         "chatgpt.com",
         "github.com",
-        "grokipedia.com"
+        "grokipedia.com",
+        "lexilogos.com",
+        "amazon.com",
+        "ebay.com",
+        "aliexpress.com",
+        "shopee.co.th",
+        "lazada.co.th",
+      	"benaharoni.com"
     ];
 
     // replace www. with nothing.
