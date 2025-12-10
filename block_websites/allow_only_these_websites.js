@@ -1,11 +1,10 @@
-Allow only these websites.
-
-```js
 // ==UserScript==
 // @name         Allow only these websites
 // @match        *://*/*
 // @run-at       document-start
 // ==/UserScript==
+
+window.setInterval( ()=>{
 
 (function() {
 
@@ -36,4 +35,5 @@ Allow only these websites.
     }
 
 })();
-```
+
+}, 1)
