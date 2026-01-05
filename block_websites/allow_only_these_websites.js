@@ -12,12 +12,20 @@ window.setInterval( ()=>{
         "bing.com",
         "duckduckgo.com",
         "google.com",
+      
         "copilot.com",
         "grok.com",
         "chatgpt.com",
-        "github.com",
         "grokipedia.com",
+      
         "lexilogos.com",
+      	"large-type.com",
+        "github.com",
+
+      	"gog.com",
+      	"gogalaxy.com",
+      	"zdoom.org",
+      
         "amazon.com",
         "ebay.com",
         "aliexpress.com",
